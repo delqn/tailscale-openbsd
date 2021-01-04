@@ -6,6 +6,9 @@
 # cd $GOPATH
 # git clone git@github.com:tailscale/tailscale.git
 
+# Gotta have Go 1.15
+doas pkg_add go 
+
 go get tailscale.com/cmd/tailscale
 
 cd $GOPATH/src/tailscale.com
