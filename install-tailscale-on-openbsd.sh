@@ -54,4 +54,6 @@ rc_cmd \$1
 EOF
 
 doas chmod 555 /etc/rc.d/tailscaled
+
 doas rcctl enable tailscaled
+doas rcctl start tailscaled
