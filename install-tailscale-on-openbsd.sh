@@ -60,3 +60,6 @@ doas chmod 555 /etc/rc.d/tailscaled
 
 doas rcctl enable tailscaled
 doas rcctl start tailscaled
+
+echo -e "Go to the URL below and log-in"
+cat /var/log/messages | grep tailscaled | grep 'AuthURL is https'
